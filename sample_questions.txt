@@ -1,0 +1,21 @@
+Questions:
+1. Concept, Real world application:
+* Integral
+* Logarithm
+* Linear homogeneous recurrence with constant coefficients
+
+2. Solution, Problem generation:
+* Evaluate the integral: $\int_0^2 x^3 \sqrt{x^2 + 4}dx$
+* Let $g(x) = \int_0^x f(t) dt$, where $f$ is the function whose graph is shown. (a) Evaluate g(0), g(1), g(2), g(3), and g(6). (b) On what interval is g increasing? (c) Where does $g$ have a maximum value?
+* Suppose the tangent line to the curve $y = f(x)$ at the point $(2 , 5)$ has the equation $y = 9 - 2x$. If Newton’s method is used to locate a root of the equation $f(x) = 0$ and the initial approximation is $x_1 = 2$, find the second approximation $x_2$.
+
+3. Verify solution:
+* Evaluate the integral: $\int_0^2 x^3 \sqrt{x^2 + 4}dx$ $x = 2\tan \theta,\ dx = 2\sec^2 \theta d\theta$ $\int_0^{\pi/4} 8\tan^3 \theta \sqrt{4 \tan^2 \theta + 4} \cdot 2 \sec^2 \theta d\theta = \int_0^{\pi/4} 8\tan^3 \theta \cdot 2\sec \theta \cdot 2 \sec^2 \theta d\theta = 32\int_0^{\pi/4} \tan^3 \theta \sec^3 \theta d\theta$ $ = 32\int_0^{\pi/4}  (\sec^2 \theta - 1) \sec^2 \theta \sec \theta \tan \theta d\theta = 32\int_0^{\pi/4}  (\sec^4 \theta - \sec^2  \theta) \sec \theta \tan \theta d\theta$ $ u = \sec \theta,\ du = \sec \theta \tan \theta d\theta$ $32 \int_1^{\sqrt{2}} (u^4 - u^2) du = 32[\frac{1}{5}u^5 - \frac{1}{3}u^3]_1^{\sqrt{2}} = 32 [(\frac{4\sqrt{2}}{5} - \frac{2\sqrt{2}}{3}) - (\frac{1}{5} - \frac{1}{3})] = 32(\frac{2\sqrt{2}}{15} + \frac{2}{15}) = \frac{64(\sqrt{2} + 1)}{15}$
+* Let $g(x) = \int_0^x f(t) dt$, where $f$ is the function whose graph is shown. (a) Evaluate g(0), g(1), g(2), g(3), and g(6). (b) On what interval is g increasing? (c) Where does $g$ have a maximum value? **(a)** $g(0) = \int_0^0 f(t)dt =  0$ $g(1) = \int_0^1f(t)dt = 2 \cdot 1 = 2$ $g(2) = g(1) + \int_1^2 f(t)dt = \int_0^1 f(t)dt + \int^2_1 f(t)dt = 2 + 2 + \frac{1}{2}2 \cdot 1 = 5$ $g(3) = g(2) + \int_2^3 f(t)dt = 5 + \frac{1}{2}4 \cdot 1 = 7$ $g(6) = g(3) + \int_3^5 f(t)dt +\int_5^6 f(t) dt = 7 - (\frac{1}{2}2 \cdot 2) - (1 \cdot 2) = 7 - 2 - 2 = 3$ **(b)** From $0$ to $3$ **(c)** At $x = 3$
+* Suppose the tangent line to the curve $y = f(x)$ at the point $(2 , 5)$ has the equation $y = 9 - 2x$. If Newton’s method is used to locate a root of the equation $f(x) = 0$ and the initial approximation is $x_1 = 2$, find the second approximation $x_2$. $x_2 = x_1 - \frac{f(x_1)}{f'(x_1)}$ $f'(x) = (9 - 2x)\frac{d}{dx} = -2$ $x_2 = 2 - \frac{5}{-2} = 4.5$
+
+4. Solution's next step:
+* Evaluate the integral: $\int_0^2 x^3 \sqrt{x^2 + 4}dx$ $x = 2\tan \theta,\ dx = 2\sec^2 \theta d\theta$ $\int_0^{\pi/4} 8\tan^3 \theta \sqrt{4 \tan^2 \theta + 4} \cdot 2 \sec^2 \theta d\theta = \int_0^{\pi/4} 8\tan^3 \theta \cdot 2\sec \theta \cdot 2 \sec^2 \theta d\theta = 32\int_0^{\pi/4} \tan^3 \theta \sec^3 \theta d\theta$ $ = 32\int_0^{\pi/4}  (\sec^2 \theta - 1) \sec^2 \theta \sec \theta \tan \theta d\theta = 32\int_0^{\pi/4}  (\sec^4 \theta - \sec^2  \theta) \sec \theta \tan \theta d\theta$ $ u = \sec \theta,\ du = \sec \theta \tan \theta d\theta$ $32 \int_1^{\sqrt{2}} (u^4 - u^2) du = 32[\frac{1}{5}u^5 - \frac{1}{3}u^3]_1^{\sqrt{2}} = 32 [(\frac{4\sqrt{2}}{5} - \frac{2\sqrt{2}}{3}) - (\frac{1}{5} - \frac{1}{3})] $
+* Let $g(x) = \int_0^x f(t) dt$, where $f$ is the function whose graph is shown. (a) Evaluate g(0), g(1), g(2), g(3), and g(6). (b) On what interval is g increasing? (c) Where does $g$ have a maximum value? **(a)** $g(0) = \int_0^0 f(t)dt =  0$ $g(1) = \int_0^1f(t)dt = 2 \cdot 1 = 2$ $g(2) = g(1) + \int_1^2 f(t)dt = \int_0^1 f(t)dt + \int^2_1 f(t)dt = 2 + 2 + \frac{1}{2}2 \cdot 1 = 5$
+* Suppose the tangent line to the curve $y = f(x)$ at the point $(2 , 5)$ has the equation $y = 9 - 2x$. If Newton’s method is used to locate a root of the equation $f(x) = 0$ and the initial approximation is $x_1 = 2$, find the second approximation $x_2$. $x_2 = x_1 - \frac{f(x_1)}{f'(x_1)}$ $f'(x)$
+
